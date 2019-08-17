@@ -1,1 +1,1 @@
-exec . *.c
+exec . *.cpp

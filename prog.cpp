@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 #include "pessoa.h"
 
 int main() {
@@ -15,11 +15,11 @@ int main() {
     Newton.ano = 1643;
     Newton.idade = -1;
 
-    calculaIdade(&Einstein, 17, 1, 2019);
-    calculaIdade(&Newton, 17, 8, 2019);
+    calculaIdade(Einstein, 17, 1, 2019);
+    calculaIdade(Newton, 17, 8, 2019);
 
-    printf("A pessoa Einstein teria %d anos de idade\n", Einstein.idade);
-    printf("A pessoa Newton teria %d anos de idade\n", Newton.idade);
+    std::printf("A pessoa Einstein teria %d anos de idade\n", Einstein.idade);
+    std::printf("A pessoa Newton teria %d anos de idade\n", Newton.idade);
 
     return 0;
 }
