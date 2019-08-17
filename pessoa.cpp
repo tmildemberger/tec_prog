@@ -1,6 +1,6 @@
 #include "pessoa.hpp"
 #include <cstring>
-#include <cstdio>
+#include <iostream>
 
 Pessoa::Pessoa(int dia_nasc, int mes_nasc, int ano_nasc, const char* nome) :
     dia(dia_nasc), mes(mes_nasc), ano(ano_nasc), idade(-1) {
@@ -12,7 +12,7 @@ void Pessoa::calculaIdade(int dia_atual, int mes_atual, int ano_atual) {
     if (mes_atual < mes || (mes_atual == mes && dia_atual < dia)) {
         --idade;
     }
-    std::printf("A idade da pessoa %s seria %d\n", nome_, idade);
+    std ::cout << "A idade da pessoa " << nome_ << " seria " << idade << '\n';
 }
 
 int Pessoa::informaIdade() {
