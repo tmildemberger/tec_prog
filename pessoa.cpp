@@ -2,8 +2,19 @@
 #include <cstring>
 #include <iostream>
 
-Pessoa::Pessoa(int dia_nasc, int mes_nasc, int ano_nasc, const char* nome) :
-    dia(dia_nasc), mes(mes_nasc), ano(ano_nasc), idade(-1) {
+Pessoa::Pessoa() {
+    inicializa(0, 0, 0);
+}
+
+Pessoa::Pessoa(int dia_nasc, int mes_nasc, int ano_nasc, const char* nome) {
+    inicializa(dia_nasc, mes_nasc, ano_nasc, nome);
+}
+
+void Pessoa::inicializa(int dia_nasc, int mes_nasc, int ano_nasc, const char* nome) {
+    dia = dia_nasc;
+    mes = mes_nasc;
+    ano = ano_nasc;
+    idade = -1;
     std::strncpy(nome_, nome, 30);
 }
 
