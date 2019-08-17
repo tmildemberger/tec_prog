@@ -1,15 +1,14 @@
 #include <cstdio>
-#include "pessoa.h"
+#include "pessoa.hpp"
 
 int main() {
-    Pessoa Einstein (14, 3, 1879);
-    Pessoa Newton (4, 1, 1643);
+    Pessoa Galileu (15, 2, 1564, "Galileu Galilei");
+    Pessoa Einstein (14, 3, 1879, "Albert Einstein");
+    Pessoa Newton (4, 1, 1643, "Isaac Newton");
 
-    Einstein.calculaIdade(17, 1, 2019);
+    Galileu.calculaIdade(17, 8, 2019);
+    Einstein.calculaIdade(17, 8, 2019);
     Newton.calculaIdade(17, 8, 2019);
-
-    std::printf("A pessoa Einstein teria %d anos de idade\n", Einstein.informaIdade());
-    std::printf("A pessoa Newton teria %d anos de idade\n", Newton.informaIdade());
 
     return 0;
 }

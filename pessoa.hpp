@@ -1,9 +1,9 @@
-#ifndef PESSOA_H
-#define PESSOA_H
+#ifndef PESSOA_HPP
+#define PESSOA_HPP
 
-struct Pessoa {
+class Pessoa {
 public:
-    Pessoa(int dia_nasc, int mes_nasc, int ano_nasc);
+    Pessoa(int dia_nasc, int mes_nasc, int ano_nasc, const char* nome = "");
 
     void calculaIdade(int dia_atual, int mes_atual, int ano_atual);
     int informaIdade();
@@ -13,7 +13,8 @@ private:
     int mes;
     int ano;
     int idade;
+    char nome_[30];
 };
 
 
-#endif // PESSOA_H
+#endif // PESSOA_HPP
