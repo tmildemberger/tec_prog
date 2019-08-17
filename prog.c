@@ -13,8 +13,8 @@ int main() {
     Newton.mes = 1;
     Newton.ano = 1643;
 
-    Einstein.idade = calculaIdade(Einstein, 2019);
-    Newton.idade = calculaIdade(Newton, 2019);
+    Einstein.idade = calculaIdade(Einstein, 17, 1, 2019);
+    Newton.idade = calculaIdade(Newton, 17, 8, 2019);
 
     printf("A pessoa Einstein teria %d anos de idade\n", Einstein.idade);
     printf("A pessoa Newton teria %d anos de idade\n", Newton.idade);
