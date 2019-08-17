@@ -11,3 +11,7 @@ void Pessoa::calculaIdade(int dia_atual, int mes_atual, int ano_atual) {
         --idade;
     }
 }
+
+int Pessoa::informaIdade() {
+    return idade;
+}

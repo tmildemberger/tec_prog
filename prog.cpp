@@ -8,8 +8,8 @@ int main() {
     Einstein.calculaIdade(17, 1, 2019);
     Newton.calculaIdade(17, 8, 2019);
 
-    std::printf("A pessoa Einstein teria %d anos de idade\n", Einstein.idade);
-    std::printf("A pessoa Newton teria %d anos de idade\n", Newton.idade);
+    std::printf("A pessoa Einstein teria %d anos de idade\n", Einstein.informaIdade());
+    std::printf("A pessoa Newton teria %d anos de idade\n", Newton.informaIdade());
 
     return 0;
 }
