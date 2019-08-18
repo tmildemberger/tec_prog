@@ -15,6 +15,9 @@ Principal::Principal() {
     Einstein.setUnivAssociada(&Princeton);
     Newton.setUnivAssociada(&Cambridge);
 
+    UTFPR.getDepto()->setNome("DAINF");
+    Galileu.setDeptoAssociada(UTFPR.getDepto());
+
     std::time_t agora = std::time(nullptr);
     std::tm* local = std::localtime(&agora);
     dia_atual = local->tm_mday;
@@ -32,4 +35,6 @@ void Principal::executar() {
     Galileu.ondeTrabalho();
     Einstein.ondeTrabalho();
     Newton.ondeTrabalho();
+
+    Galileu.meuDepartamento();
 }

@@ -2,6 +2,7 @@
 #define PESSOA_HPP
 
 #include "universidade.hpp"
+#include "departamento.hpp"
 
 class Pessoa {
 public:
@@ -16,7 +17,9 @@ public:
     int informaIdade();
 
     void setUnivAssociada(Universidade* univ);
+    void setDeptoAssociada(Departamento* depto);
     void ondeTrabalho();
+    void meuDepartamento();
 
 private:
     int dia;
@@ -25,6 +28,7 @@ private:
     int idade;
     char nome_[30];
     Universidade* univ_associada;
+    Departamento* depto_associado;
 };
 
 
