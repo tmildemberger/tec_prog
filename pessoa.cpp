@@ -23,7 +23,15 @@ void Pessoa::calculaIdade(int dia_atual, int mes_atual, int ano_atual) {
     if (mes_atual < mes || (mes_atual == mes && dia_atual < dia)) {
         --idade;
     }
-    std ::cout << "A idade da pessoa " << nome_ << " seria " << idade << '\n';
+}
+
+void Pessoa::calculaIdadeImprime(int dia_atual, int mes_atual, int ano_atual) {
+    calculaIdade(dia_atual, mes_atual, ano_atual);
+    imprimeIdade();
+}
+
+void Pessoa::imprimeIdade() {
+    std::cout << "A idade da pessoa " << nome_ << " seria " << idade << '\n';
 }
 
 int Pessoa::informaIdade() {

@@ -17,7 +17,7 @@ Principal::Principal() {
 }
 
 void Principal::executar() {
-    Galileu.calculaIdade(dia_atual, mes_atual, ano_atual);
-    Einstein.calculaIdade(dia_atual, mes_atual, ano_atual);
-    Newton.calculaIdade(dia_atual, mes_atual, ano_atual);
+    Galileu.calculaIdadeImprime(dia_atual, mes_atual, ano_atual);
+    Einstein.calculaIdadeImprime(dia_atual, mes_atual, ano_atual);
+    Newton.calculaIdadeImprime(dia_atual, mes_atual, ano_atual);
 }
