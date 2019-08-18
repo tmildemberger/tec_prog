@@ -7,6 +7,14 @@ Principal::Principal() {
     Einstein.inicializa(14, 3, 1879, "Albert Einstein");
     Newton.inicializa(4, 1, 1643, "Isaac Newton");
 
+    UTFPR.setNome("UTFPR");
+    Princeton.setNome("Princeton");
+    Cambridge.setNome("Cambridge");
+
+    Galileu.setUnivAssociada(&UTFPR);
+    Einstein.setUnivAssociada(&Princeton);
+    Newton.setUnivAssociada(&Cambridge);
+
     std::time_t agora = std::time(nullptr);
     std::tm* local = std::localtime(&agora);
     dia_atual = local->tm_mday;
@@ -20,4 +28,8 @@ void Principal::executar() {
     Galileu.calculaIdadeImprime(dia_atual, mes_atual, ano_atual);
     Einstein.calculaIdadeImprime(dia_atual, mes_atual, ano_atual);
     Newton.calculaIdadeImprime(dia_atual, mes_atual, ano_atual);
+
+    Galileu.ondeTrabalho();
+    Einstein.ondeTrabalho();
+    Newton.ondeTrabalho();
 }

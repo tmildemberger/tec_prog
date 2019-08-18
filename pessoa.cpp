@@ -16,6 +16,11 @@ void Pessoa::inicializa(int dia_nasc, int mes_nasc, int ano_nasc, const char* no
     ano = ano_nasc;
     idade = -1;
     std::strncpy(nome_, nome, 30);
+    univ_associada = nullptr;
+}
+
+Pessoa::~Pessoa() {
+    
 }
 
 void Pessoa::calculaIdade(int dia_atual, int mes_atual, int ano_atual) {
@@ -36,4 +41,12 @@ void Pessoa::imprimeIdade() {
 
 int Pessoa::informaIdade() {
     return idade;
+}
+
+void Pessoa::setUnivAssociada(Universidade* univ) {
+    univ_associada = univ;
+}
+
+void Pessoa::ondeTrabalho() {
+    std::cout << nome_ << " trabalha para a " << univ_associada->getNome() << '\n';
 }

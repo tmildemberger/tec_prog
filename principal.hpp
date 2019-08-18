@@ -12,6 +12,10 @@ private:
     Pessoa Einstein;
     Pessoa Newton;
 
+    Universidade UTFPR;
+    Universidade Princeton;
+    Universidade Cambridge;
+
     int dia_atual;
     int mes_atual;
     int ano_atual;
