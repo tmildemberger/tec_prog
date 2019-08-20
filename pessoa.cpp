@@ -20,7 +20,7 @@ void Pessoa::inicializa(int dia_nasc, int mes_nasc, int ano_nasc, const char* no
 }
 
 Pessoa::~Pessoa() {
-    
+
 }
 
 void Pessoa::calculaIdade(int dia_atual, int mes_atual, int ano_atual) {
@@ -57,4 +57,8 @@ void Pessoa::ondeTrabalho() {
 
 void Pessoa::meuDepartamento() {
     std::cout << nome_ << " trabalha no departamento " << depto_associado->getNome() << '\n';
+}
+
+const char* Pessoa::getNome() {
+    return nome_;
 }

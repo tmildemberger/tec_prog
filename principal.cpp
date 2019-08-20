@@ -1,11 +1,14 @@
 #include "principal.hpp"
 #include <iostream>
+#include <vector>
 #include <ctime>
 
 Principal::Principal() {
     Galileu.inicializa(15, 2, 1564, "Galileu Galilei");
     Einstein.inicializa(14, 3, 1879, "Albert Einstein");
     Newton.inicializa(4, 1, 1643, "Isaac Newton");
+
+    Jao.inicializa_aluno(20, 8, 2001, 1716555, "Jao da Silva");
 
     UTFPR.setNome("UTFPR");
     Princeton.setNome("Princeton");
@@ -37,4 +40,10 @@ void Principal::executar() {
     Newton.ondeTrabalho();
 
     Galileu.meuDepartamento();
+
+    std::cout << "Nome e RA do Jao: " << Jao.getNome() << ", " <<
+                 Jao.getRa() << '\n';
+
+    std::cout << sizeof (Aluno) << '\n';
+    std::cout << sizeof (std::vector<Aluno>) << '\n';
 }

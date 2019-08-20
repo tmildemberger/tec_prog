@@ -2,6 +2,7 @@
 #define PRINCIPAL_HPP
 
 #include "pessoa.hpp"
+#include "aluno.hpp"
 
 class Principal {
 public:
@@ -11,6 +12,8 @@ private:
     Pessoa Galileu;
     Pessoa Einstein;
     Pessoa Newton;
+
+    Aluno Jao;
 
     Universidade UTFPR;
     Universidade Princeton;

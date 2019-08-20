@@ -21,6 +21,8 @@ public:
     void ondeTrabalho();
     void meuDepartamento();
 
+    const char* getNome();
+
 private:
     int dia;
     int mes;
