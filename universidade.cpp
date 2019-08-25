@@ -17,6 +17,6 @@ const char* Universidade::getNome() {
     return nome_;
 }
 
-Departamento* Universidade::getDepto() {
-    return &departamento;
+void Universidade::setDepartamento(Departamento* depto) {
+    depto_ = depto;
 }

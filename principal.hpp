@@ -19,6 +19,10 @@ private:
     Universidade Princeton;
     Universidade Cambridge;
 
+    Departamento DAELN;
+    Departamento FisicaPrinceton;
+    Departamento MatematicaCambridge;
+
     int dia_atual;
     int mes_atual;
     int ano_atual;

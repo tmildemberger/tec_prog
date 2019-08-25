@@ -18,8 +18,17 @@ Principal::Principal() {
     Einstein.setUnivAssociada(&Princeton);
     Newton.setUnivAssociada(&Cambridge);
 
-    UTFPR.getDepto()->setNome("DAINF");
-    Galileu.setDeptoAssociada(UTFPR.getDepto());
+    DAELN.setNome("DAELN");
+    FisicaPrinceton.setNome("Fisica");
+    MatematicaCambridge.setNome("Matematica");
+
+    UTFPR.setDepartamento(&DAELN);
+    Princeton.setDepartamento(&FisicaPrinceton);
+    Cambridge.setDepartamento(&MatematicaCambridge);
+    
+    Einstein.setDeptoAssociada(&FisicaPrinceton);
+    Newton.setDeptoAssociada(&MatematicaCambridge);
+    Galileu.setDeptoAssociada(&DAELN);
 
     std::time_t agora = std::time(nullptr);
     std::tm* local = std::localtime(&agora);

@@ -10,10 +10,10 @@ public:
 
     void setNome(const char* nome);
     const char* getNome();
-    Departamento* getDepto();
+    void setDepartamento(Departamento* depto);
 private:
     char nome_[30];
-    Departamento departamento;
+    Departamento* depto_;
 };
 
 #endif // UNIVERSIDADE_HPP
