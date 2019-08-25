@@ -14,9 +14,9 @@ Principal::Principal() {
     Princeton.setNome("Princeton");
     Cambridge.setNome("Cambridge");
 
-    Galileu.setUnivAssociada(&UTFPR);
-    Einstein.setUnivAssociada(&Princeton);
-    Newton.setUnivAssociada(&Cambridge);
+    Galileu.setUnivAssociado(&UTFPR);
+    Einstein.setUnivAssociado(&Princeton);
+    Newton.setUnivAssociado(&Cambridge);
 
     DAELN.setNome("DAELN");
     DAINF.setNome("DAINF");
@@ -32,10 +32,10 @@ Principal::Principal() {
     DAINF.setUniversidade(&UTFPR);
     FisicaPrinceton.setUniversidade(&Princeton);
     MatematicaCambridge.setUniversidade(&Cambridge);
-    
-    Einstein.setDeptoAssociada(&FisicaPrinceton);
-    Newton.setDeptoAssociada(&MatematicaCambridge);
-    Galileu.setDeptoAssociada(&DAELN);
+
+    Einstein.setDeptoAssociado(&FisicaPrinceton);
+    Newton.setDeptoAssociado(&MatematicaCambridge);
+    Galileu.setDeptoAssociado(&DAELN);
 
     std::time_t agora = std::time(nullptr);
     std::tm* local = std::localtime(&agora);

@@ -16,21 +16,13 @@ public:
     void imprimeIdade();
     int informaIdade();
 
-    void setUnivAssociada(Universidade* univ);
-    void setDeptoAssociada(Departamento* depto);
-    void ondeTrabalho();
-    void meuDepartamento();
-
     const char* getNome();
-
-private:
+protected:
     int dia;
     int mes;
     int ano;
     int idade;
     char nome_[30];
-    Universidade* univ_associada;
-    Departamento* depto_associado;
 };
 
 

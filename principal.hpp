@@ -1,7 +1,7 @@
 #ifndef PRINCIPAL_HPP
 #define PRINCIPAL_HPP
 
-#include "pessoa.hpp"
+#include "professor.hpp"
 #include "aluno.hpp"
 
 class Principal {
@@ -9,9 +9,9 @@ public:
     Principal();
     void executar();
 private:
-    Pessoa Galileu;
-    Pessoa Einstein;
-    Pessoa Newton;
+    Professor Galileu;
+    Professor Einstein;
+    Professor Newton;
 
     Aluno Jao;
 
