@@ -20,6 +20,7 @@ private:
     Universidade Cambridge;
 
     Departamento DAELN;
+    Departamento DAINF;
     Departamento FisicaPrinceton;
     Departamento MatematicaCambridge;
 

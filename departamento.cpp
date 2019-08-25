@@ -16,3 +16,7 @@ void Departamento::setNome(const char* nome) {
 const char* Departamento::getNome() {
     return nome_;
 }
+
+void Departamento::setUniversidade(Universidade* uni) {
+    univ = uni;
+}

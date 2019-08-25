@@ -19,12 +19,19 @@ Principal::Principal() {
     Newton.setUnivAssociada(&Cambridge);
 
     DAELN.setNome("DAELN");
+    DAINF.setNome("DAINF");
     FisicaPrinceton.setNome("Fisica");
     MatematicaCambridge.setNome("Matematica");
 
-    UTFPR.setDepartamento(&DAELN);
-    Princeton.setDepartamento(&FisicaPrinceton);
-    Cambridge.setDepartamento(&MatematicaCambridge);
+    UTFPR.setDepartamento(&DAELN, 1);
+    UTFPR.setDepartamento(&DAINF, 0);
+    Princeton.setDepartamento(&FisicaPrinceton, 0);
+    Cambridge.setDepartamento(&MatematicaCambridge, 0);
+    
+    DAELN.setUniversidade(&UTFPR);
+    DAINF.setUniversidade(&UTFPR);
+    FisicaPrinceton.setUniversidade(&Princeton);
+    MatematicaCambridge.setUniversidade(&Cambridge);
     
     Einstein.setDeptoAssociada(&FisicaPrinceton);
     Newton.setDeptoAssociada(&MatematicaCambridge);
