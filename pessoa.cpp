@@ -42,6 +42,10 @@ int Pessoa::informaIdade() {
     return idade;
 }
 
+void Pessoa::setNome(const char* nome) {
+    std::strncpy(nome_, nome, 30);
+}
+
 const char* Pessoa::getNome() {
     return nome_;
 }

@@ -16,6 +16,7 @@ public:
     void imprimeIdade();
     int informaIdade();
 
+    void setNome(const char* nome);
     const char* getNome();
 protected:
     int dia;

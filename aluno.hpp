@@ -10,8 +10,8 @@ public:
     void inicializa_aluno(int dia_nc, int mes_nc, int ano_nc, int ra_aluno, const char* nome="");
     ~Aluno();
 
-    int getRa();
     void setRa(int novo_ra);
+    int getRa();
 private:
     int ra;
 };

@@ -18,10 +18,10 @@ Aluno::~Aluno() {
 
 }
 
-int Aluno::getRa() {
-    return ra;
-}
-
 void Aluno::setRa(int novo_ra) {
     ra = novo_ra;
+}
+
+int Aluno::getRa() {
+    return ra;
 }
